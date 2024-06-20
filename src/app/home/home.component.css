@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.space {
+    margin: 40px 0 40px;
+}
+.main-bg{
+    background-image: url('../../assets/images/home/11645 1.png'); 
+    background-size: cover;
+    height:1200px;
+    padding-top:80px;
+}
+.nav-bg {
+    background: #FFFFFF;
+    position: relative;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+}
+
+.logo-name {
+    font-family: Cuprum;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 60px;
+}
+
+.nav-item .active {
+    font-family: DM Sans;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FCA311;
+}
+
+.nav-link {
+    font-family: DM Sans;
+    font-size: 15px;
+    font-weight: 400;
+    color: #707070;
+    margin: 10px 40px;
+}
+
+.get {
+    position: absolute;
+    top:50%;
+    font-family: DM Sans;
+    font-size: 15px;
+    font-weight: 500;
+    color: #FCA311;
+}
+
+.Diamond {
+    position: absolute;
+    top:55%;
+    font-family: Cuprum;
+    font-size: 64px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.allthe {
+    position: absolute;
+    top:75%;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    color: #D9D9D9;
+}
+
+.btn {
+    position: absolute;
+    top:85%;
+    width: 107px;
+    height:37px;
+    padding: 8px 16px 8px 16px;
+    background-color: #FCA311;
+}
+
+.shop{
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+}
+
+.curve {
+    background: #FFFFFF;
+}
+
+.about-box {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.about {
+    font-family: Cuprum;
+    font-size: 42px;
+    font-weight: 700;
+    color: #31313B;
+    text-align: center;
+}
+
+.all {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #8D8D8D;
+    margin: 0px 20px;
+
+}
+
+.about-img1 {
+    width: 600px;
+    border-radius: 0px 100px 0px 0px;
+}
+
+.about-img2 {
+    width: 600px;
+    border-radius: 100px 0px 0px 0px;
+}
+
+.our {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 20%;
+}
+
+.jc {
+    font-family: Cuprum;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #31313B;
+    margin-top: 50%;
+}
+
+.from {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #8D8D8D;
+    margin: 13px;
+}
+
+.jewellery {
+    width: 294.55px;
+    margin-bottom: 10px;
+    margin-left: 35px;
+}
+
+.con-box {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.black-box {
+    width: 282px;
+    height: 263px;
+    background-color: #101010;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.contact {
+    font-family: Cuprum;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.design {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #8D8D8D;
+}
+
+.contact-icons {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.number {
+    font-family: Cuprum;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.Support {
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    color: #EAEAEA;
+}
+
+.quick {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #EAEAEA;
+}
+
+
+.footer-bg {
+    background: #F5F5F5;
+
+}
+
+footer {
+    padding: 3%;
+}
+
+.footer-img {
+    width: 91px;
+    height: 42px;
+}
+
+.footer-main {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.footer-icons {
+    height: 24px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.tech1,
+.tech2 {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.payment-img {
+    display: flex;
+    height: 20px;
+    color: #989898;
+
+}
+
+.tech2 {
+    float: right;
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+
+    .about-img1,
+    .about-img2 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .con-box,
+    .about-box {
+        width: 100%;
+    }
+
+    .all,
+    .our,
+    .form {
+        margin: 0px;
+    }
+
+    .jc {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .black-box {
+        margin-bottom: 10px;
+    }
+
+}
