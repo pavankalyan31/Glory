@@ -12,12 +12,19 @@ body {
 .space {
     margin: 40px 0 40px;
 }
-.main-bg{
+
+.main-bg {
     background-image: url('../../assets/images/home/11645 1.png'); 
-    background-size: cover;
-    height:1200px;
-    padding-top:80px;
+    background-size: cover; /* Ensure the background image covers the entire div */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1200px; /* Adjust height as needed */
+    padding-top: 80px;
+    position: relative; /* Ensure positioning context for absolutely positioned children */
 }
+
+
 .nav-bg {
     background: #FFFFFF;
     position: relative;
@@ -25,7 +32,6 @@ body {
 
 .logo {
     width: 45px;
-    height: 45px;
 }
 
 .logo-name {
@@ -50,9 +56,15 @@ body {
     margin: 10px 40px;
 }
 
-.get {
+.home-box {
     position: absolute;
-    top:50%;
+    top:25%;
+    left: 12%;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.get {
     font-family: DM Sans;
     font-size: 15px;
     font-weight: 500;
@@ -60,8 +72,6 @@ body {
 }
 
 .Diamond {
-    position: absolute;
-    top:55%;
     font-family: Cuprum;
     font-size: 64px;
     font-weight: 700;
@@ -69,38 +79,58 @@ body {
 }
 
 .allthe {
-    position: absolute;
-    top:75%;
     font-family: DM Sans;
     font-size: 14px;
     font-weight: 400;
     color: #D9D9D9;
+    white-space: pre-line; 
+    margin-bottom: 30px; 
 }
 
+
 .btn {
-    position: absolute;
-    top:85%;
     width: 107px;
     height:37px;
-    padding: 8px 16px 8px 16px;
     background-color: #FCA311;
 }
 
 .shop{
+    color: #000000;
+    text-align: center;
     font-family: DM Sans;
     font-size: 16px;
     font-weight: 400;
-    color: #000000;
-    text-align: center;
 }
 
-.curve {
-    background: #FFFFFF;
+.main {
+    overflow: visible;
+}
+
+.curve1 {
+    position: absolute;
+    top: 159%; 
+    left: 0;
+    width: calc(50% - -1px); 
+    height: 910px;
+    border-radius: 0px 100px 0px 0px;  
+    background-color: #FFFFFF;  
+}
+
+.curve2 {
+    position: absolute;
+    top: 159%; 
+    right: 0;
+    width: calc(50% - -1px); 
+    height: 910px;
+    border-radius: 100px 0px 0px 0px;
+    background-color: #FFFFFF;
 }
 
 .about-box {
-    width: 45%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 5% auto; 
+    position: relative;
+    margin-bottom: 20px;
 }
 
 .about {
@@ -109,6 +139,17 @@ body {
     font-weight: 700;
     color: #31313B;
     text-align: center;
+    overflow: visible; 
+}
+
+.about-img1 {
+    width: 100%;
+    border-radius: 0px 100px 0px 0px;
+}
+
+.about-img2 {
+    width: 100%;
+    border-radius: 100px 0px 0px 0px; 
 }
 
 .all {
@@ -117,26 +158,25 @@ body {
     font-weight: 400;
     text-align: center;
     color: #8D8D8D;
-    margin: 0px 20px;
-
+    white-space: pre-line;
 }
 
-.about-img1 {
-    width: 600px;
-    border-radius: 0px 100px 0px 0px;
+.WorldFinest {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: #8D8D8D;
+    white-space: pre-line;
 }
 
-.about-img2 {
-    width: 600px;
-    border-radius: 100px 0px 0px 0px;
-}
 
 .our {
     font-family: Poppins;
     font-size: 14px;
     font-weight: 400;
     text-align: center;
-    margin: 0 20%;
+    white-space: pre-line;  
 }
 
 .jc {
@@ -154,26 +194,26 @@ body {
     font-weight: 400;
     text-align: center;
     color: #8D8D8D;
-    margin: 13px;
+    white-space:pre-line;
 }
 
 .jewellery {
-    width: 294.55px;
-    margin-bottom: 10px;
-    margin-left: 35px;
+    width: 100%;
+    overflow: visible;
 }
 
 .con-box {
     width: 45%;
     margin: 0 auto;
+    overflow: visible;
 }
 
 .black-box {
     width: 282px;
     height: 263px;
     background-color: #101010;
-    padding: 30px;
-    margin: 0 auto;
+    padding: 20px;
+    margin: 2px auto;
 }
 
 .contact {
@@ -189,12 +229,14 @@ body {
     font-weight: 400;
     text-align: center;
     color: #8D8D8D;
+    white-space: pre-line;
 }
 
 .contact-icons {
     width: 40px;
     height: 40px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .number {
@@ -220,16 +262,22 @@ body {
     font-weight: 400;
     text-align: center;
     color: #EAEAEA;
+    white-space: pre-line;
 }
 
 
 .footer-bg {
     background: #F5F5F5;
-
 }
 
 footer {
     padding: 3%;
+}
+
+.footer-name {
+    font-family: Cuprum;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .footer-img {
@@ -243,8 +291,13 @@ footer {
     font-weight: 400;
     display: flex;
     justify-content: space-around;
+    color: #31313B;
+
 }
 
+.footer-main a{
+    text-decoration: none;
+}
 
 .footer-icons {
     height: 24px;
@@ -265,7 +318,6 @@ footer {
     display: flex;
     height: 20px;
     color: #989898;
-
 }
 
 .tech2 {
@@ -273,6 +325,43 @@ footer {
 }
 
 @media screen and (min-width:320px) and (max-width:768px) {
+    .main-bg{
+        width: 100%;
+        padding-top: 10%;
+    }
+    .navbar{
+        z-index: 1;
+    }
+
+    .nav-link{
+        padding: 0px;
+    }
+    .main-bg {
+        width: 100%;      
+        background-size: cover; 
+    }
+
+    .navbar-brand{
+        margin-left: -45px;
+    }
+
+    .navbar-toggler{
+        margin: 15px;
+    }
+
+    .home-box{
+        position: absolute;
+        top: 15%;
+        width: 70%;
+    }
+
+    .Diamond {
+        font-size: 30px;
+    }
+
+    .allthe{
+        font-size: 14px;
+    }
 
     .about-img1,
     .about-img2 {
@@ -280,24 +369,120 @@ footer {
         margin-bottom: 10px;
     }
 
-    .con-box,
     .about-box {
-        width: 100%;
+        width:100%;
     }
 
-    .all,
-    .our,
+    .con-box {
+        width:100%;
+    }    
+
     .form {
         margin: 0px;
     }
+    
+    .gap{
+        display: none;
+    }
 
     .jc {
-        margin-top: 0px;
+        margin-top: 5%;
         width: 100%;
     }
 
+    .jewellery {
+        width: 90%;
+        overflow: hidden;
+    }
+
     .black-box {
+        padding: 5px;
         margin-bottom: 10px;
     }
 
+    .footer-main {
+        column-gap: 10px;
+    }
+
+    .footer-icons{
+        column-gap: 10px;
+        display: flex;
+    }
+
+    .footer-name{
+        text-align: center;
+    }
+}
+
+@media  (min-width:1024px) and (max-width: 1439px) {
+
+    
+    .home-box {
+        top: 25%;
+        left: 10%;
+        width: 45%;
+    }
+
+    .Diamond {
+        font-size: 48px; 
+    }
+
+    .WorldFinest {
+        font-size: 14px; 
+        margin: 0%;
+        width: 101%;
+    }
+
+    .btn {
+        width: 90px; 
+        height: 32px; 
+    }
+
+    .shop {
+        font-size: 14px; 
+    }
+
+    .curve1, .curve2{
+    top: 279%;    
+    }
+
+    .about-box{
+        margin: 5% auto;
+    }
+
+    .about-img1, .about-img2{
+        width: 100%;
+    }
+
+    .con-box {
+        width: 100%;
+    }
+
+    .bb {
+        flex: 0 0 25%; 
+        max-width: 24%; 
+    }   
+
+}
+
+@media screen and (max-width: 1440px) {
+    .curve1 {
+        position: absolute;
+        top: 279%;
+        left: 0;
+        width: calc(50% - -1px);
+        height: 910px;
+        border-radius: 0px 100px 0px 0px;
+        background-color: #FFFFFF;
+    }
+
+    .curve2 {
+        position: absolute;
+        top: 279%;
+        right: 0;
+        width: calc(50% - -1px);
+        height: 910px;
+        border-radius: 100px 0px 0px 0px;
+        background-color: #FFFFFF;
+    }
 }
